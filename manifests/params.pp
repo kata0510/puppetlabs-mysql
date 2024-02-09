@@ -474,8 +474,8 @@ class mysql::params {
       'max_connections'       => '151',
       'pid-file'              => $mysql::params::pidfile,
       'port'                  => '3306',
-      'query_cache_limit'     => '1M',
-      'query_cache_size'      => '16M',
+      #'query_cache_limit'     => '1M', # MySQL8で削除
+      #'query_cache_size'      => '16M',
       'skip-external-locking' => true,
       'socket'                => $mysql::params::socket,
       'ssl'                   => false,
